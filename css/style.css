@@ -1,0 +1,162 @@
+/* 
+    Document   : style
+    Created on : Dec 29, 2012, 1:08:52 PM
+    Author     : Ted
+    Description:
+*/
+
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 12px;
+}
+
+#top_menu {
+    list-style: none;
+    width: 180px;
+    margin: 0px auto 0px auto;
+    padding: 0px 5px 0px 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #222222;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+}
+
+#top_menu li {
+    display:block;
+    text-align:center;
+    position:relative;
+    padding: 4px 10px 4px 10px;
+    margin-top:7px;
+    border:none;
+}
+
+
+
+#top_menu li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color: #EEEEEE;
+    display:block;
+    outline:0;
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.dropdown_graph,
+.dropdown_settings,
+.dropdown_feedback {
+    margin:4px auto;
+    position:absolute;
+    left:-999em; /* Hides the drop down */
+    text-align:left;
+    padding:10px 5px 10px 5px;
+    border:1px solid #777777;
+    border-top:none;
+    /* Gradient background */
+    background:#F4F4F4;
+    background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+    /* Rounded Corners */
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.dropdown_graph {
+    width: 180px;
+}
+
+.dropdown_settings {
+    width: 700px;
+}
+
+.dropdown_feedback {
+    width: 500px;
+}
+
+#top_menu li:mousedown .dropdown_graph,
+#top_menu li:mousedown .dropdown_settings,
+#top_menu li:mousedown .dropdown_feedback {
+    left:-1px;top:auto;
+}
+
+.col_1,
+.col_2 {
+    text-align: left;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+.col_2 {
+    background-color:#FF9;
+    width: 270px;
+}
+
+.control_menu_items {
+    float: left;
+    background-color: #F3F3F3;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+#container {
+    width: 1115px;
+    margin-top:10px;
+    margin-left: 200px;
+}
+
+#canvas_container {
+    border: 5px solid #aaa;
+    background-color: #9cf;
+}
+
+#menu {
+    /*height: 40px;*/
+}
+
+#control_panel {
+    height: 85%;
+    display: none;
+    /*position:fixed;*/
+    float:left;
+    /*bottom: 0;*/
+    width: 83%;
+    box-shadow: inset 0 0 15px #00214B;
+    background-color: #CDCDCD;
+}
+
+#control_panel_toggle {
+    float:left;
+    /*position:fixed;*/
+    /*bottom: 0;*/
+    width: 83%;
+    height: 10%;
+    box-shadow: inset 0 0 15px #00214B;
+    background-color: #CDCDCD;
+}
+
+#controls {
+    text-align: left;
+    margin-left: 25px;
+}
+
+#browser_size {
+    height: 10%;
+    display: block;
+    float:right;
+    /*position:fixed;*/
+    /*bottom:0;*/
+    /*right:10px;*/
+    width:15%;
+    text-align: center;
+    box-shadow: inset 0 0 15px #00214B;
+    background-color: #FF9;
+}
+
+.settings_input {
+    width: 30px;
+}
